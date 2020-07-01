@@ -71,7 +71,7 @@ class wkthmltopdf {
             BufferedReader error = null;
             Process proc = Runtime.getRuntime().exec(cmd.toString());
         } catch (Exception e) {
-            System.out.println("失败");
+            System.out.println("返回失败");
         }
     }
 
@@ -92,7 +92,7 @@ class wkthmltopdf {
     }
 
     public static void main(String[] args) throws Exception {
-      /*  String path = "D:/测试文件/PDF/";
+       String path = "D:/测试文件/PDF/";
         String ID = FiletTest.getFileDir("D:\\测试文件\\ID");
         String URL = FiletTest.getFileDir("D:\\测试文件\\URL");
         List<String> Urllist = readerUrl(URL);
@@ -109,8 +109,8 @@ class wkthmltopdf {
             int number = (int) ((Math.random() * 9 + 1) * 100000);
             String  newPath = path + listId.get(i) + "-" + number + ".pdf";
 
-        }*/
-        wkthmltopdf. convert("http://www.fontawesome.com.cn/cheatsheet/" ,"D:\\测试文件\\PDF\\123.pdf");
+        }
+       // wkthmltopdf. convert("http://www.fontawesome.com.cn/cheatsheet/" ,"D:\\测试文件\\PDF\\123.pdf");
 
     }
 }
